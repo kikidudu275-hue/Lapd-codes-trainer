@@ -1,0 +1,37 @@
+# LAPD 10-CODES TRAINER - Version 100% LAPD Officielle
+
+codes = {
+    "10-4": "Compris / Affirmatif",
+    "10-6": "Occupé / Busy",
+    "10-7": "Hors service",
+    "10-8": "En service / Disponible",
+    "10-15": "Suspect en garde à vue",
+    "10-19": "Retour à la base",
+    "10-20": "Localisation - Where is your 10-20?",
+    "10-23": "Arrivé sur les lieux",
+    "10-97": "Arrivé sur scène",
+    "code 0": "OFFICIER EN DETRESSE - URGENCE ABSOLUE",
+    "10-0": "OFFICIER EN DETRESSE - URGENCE ABSOLUE",
+    "code 2": "Appel urgent sans sirène",
+    "code 3": "Urgence avec sirène et gyrophare",
+    "code 4": "Tout est OK, pas d'aide nécessaire",
+    "code 4 adam": "Pas d'aide nécessaire, suspect en garde",
+    "code 6": "Sur les lieux - Reste sur place",
+    "code 6 adam": "Besoin d'aide non urgent",
+    "code 6 charles": "Besoin d'aide urgente mais pas Code 0",
+}
+
+print("=== LAPD 10-CODES TRAINER - 100% LAPD ===")
+print("Tape 'quit' pour quitter")
+
+while True:
+    code = input("\nEntre un code LAPD : ").lower()
+    
+    if code == "quit":
+        print("10-8 ! Fin de service.")
+        break
+    
+    if code in codes:
+        print(f"{code.upper()} = {codes[code]}")
+    else:
+        print("Code inconnu en LAPD.")
